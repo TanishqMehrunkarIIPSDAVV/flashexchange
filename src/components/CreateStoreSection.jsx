@@ -2,89 +2,372 @@ import { useTheme } from "../ThemeProvider";
 
 function ArrowRightIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="M4 10h10m0 0-4-4m4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M4 10h10m0 0-4-4m4 4-4 4"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function ShieldIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="M10 2.8 15.5 5v4.2c0 3.4-2.2 6.4-5.5 7.8-3.3-1.4-5.5-4.4-5.5-7.8V5L10 2.8Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="m7.8 10.1 1.4 1.4 3-3.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M10 2.8 15.5 5v4.2c0 3.4-2.2 6.4-5.5 7.8-3.3-1.4-5.5-4.4-5.5-7.8V5L10 2.8Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="m7.8 10.1 1.4 1.4 3-3.2"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function StoreIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="M3 7h14l-1 3H4L3 7Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M5 10v6h10v-6" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M7 16v-3h6v3" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M4.2 4.8 5.3 7h9.4l1.1-2.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M3 7h14l-1 3H4L3 7Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M5 10v6h10v-6"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7 16v-3h6v3"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4.2 4.8 5.3 7h9.4l1.1-2.2"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function GridIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="M4 4h4v4H4V4Zm8 0h4v4h-4V4ZM4 12h4v4H4v-4Zm8 0h4v4h-4v-4Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M4 4h4v4H4V4Zm8 0h4v4h-4V4ZM4 12h4v4H4v-4Zm8 0h4v4h-4v-4Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function TrendIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="M3 14.5 7.2 10.3 10.4 12.8 16.8 6.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M12.8 6.5h4v4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M3 14.5 7.2 10.3 10.4 12.8 16.8 6.5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.8 6.5h4v4"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function CheckIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="m5.5 10.2 3 3 6-6.4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="m5.5 10.2 3 3 6-6.4"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function FlowArrow({ className = "h-6 w-6 text-cyan-400 dark:text-cyan-300" }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M13 7l5 5m0 0l-5 5m5-5H6"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function VerticalFlowArrow({ isDark = false }) {
+  return (
+    <div className="flex justify-center py-6">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+        className={`h-6 w-6 ${isDark ? "text-cyan-400/50" : "text-cyan-400/40"}`}
+      >
+        <path
+          d="M12 5v14m0 0l-4-4m4 4l4-4"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </div>
+  );
+}
+
+function RegisterIcon({ className = "h-7 w-7" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M10 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM3.5 13a6.5 6.5 0 1 1 13 0v1.5H3.5V13Z" />
+    </svg>
+  );
+}
+
+function CreateStoreIcon({ className = "h-7 w-7" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M4 3h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" />
+    </svg>
+  );
+}
+
+function ListProductIcon({ className = "h-7 w-7" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M2 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm3 1h2v2H5V5Zm0 4h2v2H5V9Zm4-4h2v2H9V5Zm0 4h2v2H9V9Zm4-4h2v2h-2V5Zm0 4h2v2h-2V9Z" />
+    </svg>
+  );
+}
+
+function ShareLinkIcon({ className = "h-7 w-7" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M13 6.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm7 7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm-3-6.5a1 1 0 1 0 5.73 1.148L10 10.5l-.27-.852ZM6.5 9.5a1 1 0 1 0 4.366-2.268L9 8l-.634.232Z" />
+    </svg>
+  );
+}
+
+function HoldIcon({ className = "h-7 w-7" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M5.5 13a3.5 3.5 0 0 1-.369-6.98 4 4 0 1 1 7.753-1 4.5 4.5 0 1 1-4.384 5.98Zm4-6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
+    </svg>
+  );
+}
+
+function DeliveryIcon({ className = "h-7 w-7" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M8 16.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15 16.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+      <path d="M3 4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1.05a2.5 2.5 0 0 1 4.9 0H10a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H3ZM14 7a1 1 0 0 0-1 1v6.05A2.5 2.5 0 0 1 9.5 16h4a2.5 2.5 0 0 1-3.5-2.5V8a1 1 0 0 0-1-1h-2.5a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1Z" />
+    </svg>
+  );
+}
+
+function FundsIcon({ className = "h-7 w-7" }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M4 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2V6h10a2 2 0 0 1-2-2V4a2 2 0 0 0-2-2H4Zm2 6a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H6Z" />
     </svg>
   );
 }
 
 function LockIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="M6.5 8V6.8A3.5 3.5 0 0 1 10 3.3a3.5 3.5 0 0 1 3.5 3.5V8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-      <path d="M5.5 8h9v7.2h-9V8Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M10 10.4v1.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M6.5 8V6.8A3.5 3.5 0 0 1 10 3.3a3.5 3.5 0 0 1 3.5 3.5V8"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+      <path
+        d="M5.5 8h9v7.2h-9V8Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10 10.4v1.7"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
 function PackageIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="M4 6.5 10 3l6 3.5-6 3.5L4 6.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M4 6.5v7l6 3.5 6-3.5v-7" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M10 10v7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M4 6.5 10 3l6 3.5-6 3.5L4 6.5Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4 6.5v7l6 3.5 6-3.5v-7"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10 10v7"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
 function MessageIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="M4.5 4.8h11v7.2h-5.8L6.6 15v-3H4.5V4.8Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M4.5 4.8h11v7.2h-5.8L6.6 15v-3H4.5V4.8Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function StarIcon({ className = "h-4 w-4" }) {
   return (
-    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" className={className}>
-      <path d="m10 3 1.9 4.1 4.5.6-3.2 3 1 4.4L10 12.9 5.8 15l1-4.3-3.2-3 4.5-.6L10 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="m10 3 1.9 4.1 4.5.6-3.2 3 1 4.4L10 12.9 5.8 15l1-4.3-3.2-3 4.5-.6L10 3Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -96,13 +379,13 @@ const trustStats = [
 ];
 
 const howItWorks = [
-  "Register",
-  "Create Store",
-  "List Product",
-  "Share Link",
-  "Protected Hold",
-  "Instant Delivery",
-  "Funds Released",
+  { label: "Register", icon: RegisterIcon },
+  { label: "Create Store", icon: CreateStoreIcon },
+  { label: "List Product", icon: ListProductIcon },
+  { label: "Share Link", icon: ShareLinkIcon },
+  { label: "Protected Hold", icon: HoldIcon },
+  { label: "Instant Delivery", icon: DeliveryIcon },
+  { label: "Funds Released", icon: FundsIcon },
 ];
 
 const features = [
@@ -151,10 +434,26 @@ const faqItems = [
 ];
 
 const productCards = [
-  { name: "Premium Game Key", price: "$39.00", accent: "from-cyan-300 to-indigo-400" },
-  { name: "Discord Boost Pack", price: "$12.00", accent: "from-violet-300 to-fuchsia-400" },
-  { name: "Creator Toolkit", price: "$59.00", accent: "from-emerald-300 to-cyan-300" },
-  { name: "Pro Login Bundle", price: "$99.00", accent: "from-slate-300 to-slate-500" },
+  {
+    name: "Premium Game Key",
+    price: "$39.00",
+    accent: "from-cyan-300 to-indigo-400",
+  },
+  {
+    name: "Discord Boost Pack",
+    price: "$12.00",
+    accent: "from-violet-300 to-fuchsia-400",
+  },
+  {
+    name: "Creator Toolkit",
+    price: "$59.00",
+    accent: "from-emerald-300 to-cyan-300",
+  },
+  {
+    name: "Pro Login Bundle",
+    price: "$99.00",
+    accent: "from-slate-300 to-slate-500",
+  },
 ];
 
 const dashboardMetrics = [
@@ -167,12 +466,34 @@ const dashboardMetrics = [
 const dashboardBars = [42, 56, 36, 72, 58, 90, 76, 66, 84, 61, 74, 88];
 
 const dashboardOrders = [
-  { id: "#2041", product: "Premium Game Key", status: "Paid", amount: "$39.00" },
-  { id: "#2042", product: "Creator Toolkit", status: "Pending", amount: "$59.00" },
-  { id: "#2043", product: "Discord Boost Pack", status: "Paid", amount: "$12.00" },
+  {
+    id: "#2041",
+    product: "Premium Game Key",
+    status: "Paid",
+    amount: "$39.00",
+  },
+  {
+    id: "#2042",
+    product: "Creator Toolkit",
+    status: "Pending",
+    amount: "$59.00",
+  },
+  {
+    id: "#2043",
+    product: "Discord Boost Pack",
+    status: "Paid",
+    amount: "$12.00",
+  },
 ];
 
-const sidebarItems = ["Overview", "Orders", "Listings", "Payments", "Messages", "Settings"];
+const sidebarItems = [
+  "Overview",
+  "Orders",
+  "Listings",
+  "Payments",
+  "Messages",
+  "Settings",
+];
 
 function SectionTitle({ eyebrow, title, text }) {
   return (
@@ -209,13 +530,31 @@ function StatCard({ value, label }) {
   );
 }
 
-function StepBubble({ label }) {
+function StepBubble({ label, icon: Icon }) {
   return (
-    <div className="flex flex-col items-center gap-3 text-center">
-      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-cyan-200/40 bg-white/95 text-cyan-700 shadow-[0_8px_20px_rgba(34,211,238,0.18)] dark:border-cyan-300/20 dark:bg-slate-900/80 dark:text-cyan-200">
-        <CheckIcon className="h-5 w-5" />
+    <div className="flex flex-col items-center gap-3 text-center relative group">
+      {/* Glow */}
+      <div
+        className="absolute inset-0 rounded-full blur-xl opacity-20 group-hover:opacity-40 transition 
+        bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400"
+      />
+
+      {/* Icon container */}
+      <div
+        className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full 
+        border border-cyan-200/40 
+        bg-white/90 
+        text-cyan-700 
+        shadow-[0_10px_25px_rgba(34,211,238,0.25)]
+        dark:border-cyan-300/20 
+        dark:bg-slate-900/80 
+        dark:text-cyan-200
+        dark:shadow-[0_0_30px_rgba(168,85,247,0.25)]"
+      >
+        <Icon className="h-7 w-7" />
       </div>
-      <p className="max-w-[96px] text-[11px] leading-4 text-slate-600 dark:text-slate-400">
+
+      <p className="max-w-[100px] text-[11px] leading-4 text-slate-600 dark:text-slate-400">
         {label}
       </p>
     </div>
@@ -226,7 +565,15 @@ function FeatureCard({ title, text }) {
   return (
     <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_14px_30px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-slate-950/70">
       <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl border border-cyan-200/30 bg-[linear-gradient(135deg,rgba(34,211,238,0.2),rgba(168,85,247,0.18))] text-cyan-700 dark:border-cyan-300/15 dark:text-cyan-200">
-        {title.includes("Payment") ? <ShieldIcon className="h-5 w-5" /> : title.includes("API") ? <PackageIcon className="h-5 w-5" /> : title.includes("Support") ? <MessageIcon className="h-5 w-5" /> : <LockIcon className="h-5 w-5" />}
+        {title.includes("Payment") ? (
+          <ShieldIcon className="h-5 w-5" />
+        ) : title.includes("API") ? (
+          <PackageIcon className="h-5 w-5" />
+        ) : title.includes("Support") ? (
+          <MessageIcon className="h-5 w-5" />
+        ) : (
+          <LockIcon className="h-5 w-5" />
+        )}
       </div>
       <h3 className="text-sm font-semibold text-slate-900 dark:text-white">
         {title}
@@ -241,12 +588,20 @@ function FeatureCard({ title, text }) {
 function ProductCard({ product }) {
   return (
     <div className="flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/90 p-4 shadow-[0_12px_28px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-slate-950/70">
-      <div className={`h-12 w-12 rounded-2xl bg-gradient-to-br ${product.accent} shadow-[0_0_22px_rgba(168,85,247,0.18)]`} />
+      <div
+        className={`h-12 w-12 rounded-2xl bg-gradient-to-br ${product.accent} shadow-[0_0_22px_rgba(168,85,247,0.18)]`}
+      />
       <div className="min-w-0 flex-1">
-        <p className="font-medium text-slate-900 dark:text-white">{product.name}</p>
-        <p className="text-xs text-slate-500 dark:text-slate-400">Digital product card</p>
+        <p className="font-medium text-slate-900 dark:text-white">
+          {product.name}
+        </p>
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          Digital product card
+        </p>
       </div>
-      <p className="text-sm font-semibold text-slate-900 dark:text-cyan-100">{product.price}</p>
+      <p className="text-sm font-semibold text-slate-900 dark:text-cyan-100">
+        {product.price}
+      </p>
     </div>
   );
 }
@@ -262,13 +617,21 @@ function DashboardPreview({ isDark }) {
 
   const textPrimary = isDark ? "text-white" : "text-slate-900";
   const textSecondary = isDark ? "text-slate-400" : "text-slate-500";
-  const mutedCard = isDark ? "border-white/10 bg-slate-900/80" : "border-slate-200/80 bg-white";
+  const mutedCard = isDark
+    ? "border-white/10 bg-slate-900/80"
+    : "border-slate-200/80 bg-white";
 
   return (
-    <div className={`rounded-[28px] border p-4 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-5 ${panelClass}`}>
-      <div className={`mb-4 flex items-center justify-between rounded-2xl border px-4 py-3 text-xs ${isDark ? 'border-white/10 bg-slate-900/80 text-slate-400' : 'border-slate-200/70 bg-slate-50 text-slate-500'}`}>
+    <div
+      className={`rounded-[28px] border p-4 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-5 ${panelClass}`}
+    >
+      <div
+        className={`mb-4 flex items-center justify-between rounded-2xl border px-4 py-3 text-xs ${isDark ? "border-white/10 bg-slate-900/80 text-slate-400" : "border-slate-200/70 bg-slate-50 text-slate-500"}`}
+      >
         <span>Store dashboard</span>
-        <span className={`rounded-full px-3 py-1 font-medium ${isDark ? 'bg-cyan-500/10 text-cyan-200' : 'bg-cyan-500/10 text-cyan-700'}`}>
+        <span
+          className={`rounded-full px-3 py-1 font-medium ${isDark ? "bg-cyan-500/10 text-cyan-200" : "bg-cyan-500/10 text-cyan-700"}`}
+        >
           Live preview
         </span>
       </div>
@@ -281,7 +644,9 @@ function DashboardPreview({ isDark }) {
                 D
               </div>
               <div>
-                <p className={`text-sm font-semibold ${textPrimary}`}>Dsell Admin</p>
+                <p className={`text-sm font-semibold ${textPrimary}`}>
+                  Dsell Admin
+                </p>
                 <p className={`text-[11px] ${textSecondary}`}>Store controls</p>
               </div>
             </div>
@@ -290,7 +655,7 @@ function DashboardPreview({ isDark }) {
               {sidebarItems.map((item, index) => (
                 <div
                   key={item}
-                  className={`rounded-2xl px-3 py-2 text-xs ${index === 0 ? 'bg-[linear-gradient(135deg,rgba(74,111,223,0.15),rgba(172,114,230,0.15))] font-medium text-slate-900 dark:text-white' : textSecondary}`}
+                  className={`rounded-2xl px-3 py-2 text-xs ${index === 0 ? "bg-[linear-gradient(135deg,rgba(74,111,223,0.15),rgba(172,114,230,0.15))] font-medium text-slate-900 dark:text-white" : textSecondary}`}
                 >
                   {item}
                 </div>
@@ -302,10 +667,16 @@ function DashboardPreview({ isDark }) {
             <div className={`rounded-2xl border p-3 ${mutedCard}`}>
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className={`text-sm font-semibold ${textPrimary}`}>Storefront overview</p>
-                  <p className={`text-xs ${textSecondary}`}>Product shelf and live sales activity</p>
+                  <p className={`text-sm font-semibold ${textPrimary}`}>
+                    Storefront overview
+                  </p>
+                  <p className={`text-xs ${textSecondary}`}>
+                    Product shelf and live sales activity
+                  </p>
                 </div>
-                <div className={`rounded-full px-3 py-1 text-xs ${isDark ? 'bg-white/10 text-slate-300' : 'bg-slate-100 text-slate-600'}`}>
+                <div
+                  className={`rounded-full px-3 py-1 text-xs ${isDark ? "bg-white/10 text-slate-300" : "bg-slate-100 text-slate-600"}`}
+                >
                   Online
                 </div>
               </div>
@@ -357,23 +728,40 @@ function DashboardPreview({ isDark }) {
               <div className={`rounded-2xl border p-4 ${mutedCard}`}>
                 <div className="mb-3 flex items-center justify-between">
                   <div>
-                    <p className={`text-sm font-semibold ${textPrimary}`}>Top listings</p>
-                    <p className={`text-xs ${textSecondary}`}>Products ready for checkout</p>
+                    <p className={`text-sm font-semibold ${textPrimary}`}>
+                      Top listings
+                    </p>
+                    <p className={`text-xs ${textSecondary}`}>
+                      Products ready for checkout
+                    </p>
                   </div>
-                  <span className={`rounded-full px-3 py-1 text-xs ${isDark ? 'bg-white/10 text-slate-300' : 'bg-slate-100 text-slate-600'}`}>
+                  <span
+                    className={`rounded-full px-3 py-1 text-xs ${isDark ? "bg-white/10 text-slate-300" : "bg-slate-100 text-slate-600"}`}
+                  >
                     4 live
                   </span>
                 </div>
 
                 <div className="space-y-3">
                   {productCards.map((card) => (
-                    <div key={card.name} className={`flex items-center gap-3 rounded-2xl border p-3 ${isDark ? 'border-white/10 bg-slate-950/70' : 'border-slate-200/80 bg-slate-50/80'}`}>
-                      <div className={`h-11 w-11 rounded-2xl bg-gradient-to-br ${card.accent}`} />
+                    <div
+                      key={card.name}
+                      className={`flex items-center gap-3 rounded-2xl border p-3 ${isDark ? "border-white/10 bg-slate-950/70" : "border-slate-200/80 bg-slate-50/80"}`}
+                    >
+                      <div
+                        className={`h-11 w-11 rounded-2xl bg-gradient-to-br ${card.accent}`}
+                      />
                       <div className="min-w-0 flex-1">
-                        <p className={`text-sm font-semibold ${textPrimary}`}>{card.name}</p>
-                        <p className={`text-xs ${textSecondary}`}>Featured listing</p>
+                        <p className={`text-sm font-semibold ${textPrimary}`}>
+                          {card.name}
+                        </p>
+                        <p className={`text-xs ${textSecondary}`}>
+                          Featured listing
+                        </p>
                       </div>
-                      <p className={`text-sm font-semibold ${textPrimary}`}>{card.price}</p>
+                      <p className={`text-sm font-semibold ${textPrimary}`}>
+                        {card.price}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -382,24 +770,41 @@ function DashboardPreview({ isDark }) {
               <div className={`rounded-2xl border p-4 ${mutedCard}`}>
                 <div className="mb-3 flex items-center justify-between">
                   <div>
-                    <p className={`text-sm font-semibold ${textPrimary}`}>Recent orders</p>
-                    <p className={`text-xs ${textSecondary}`}>Latest customer activity</p>
+                    <p className={`text-sm font-semibold ${textPrimary}`}>
+                      Recent orders
+                    </p>
+                    <p className={`text-xs ${textSecondary}`}>
+                      Latest customer activity
+                    </p>
                   </div>
-                  <span className={`rounded-full px-3 py-1 text-xs ${isDark ? 'bg-violet-500/10 text-violet-200' : 'bg-violet-500/10 text-violet-700'}`}>
+                  <span
+                    className={`rounded-full px-3 py-1 text-xs ${isDark ? "bg-violet-500/10 text-violet-200" : "bg-violet-500/10 text-violet-700"}`}
+                  >
                     Today
                   </span>
                 </div>
 
                 <div className="space-y-2">
                   {dashboardOrders.map((order) => (
-                    <div key={order.id} className={`flex items-center justify-between rounded-2xl border px-3 py-3 ${isDark ? 'border-white/10 bg-slate-900/80' : 'border-slate-200/80 bg-white/90'}`}>
+                    <div
+                      key={order.id}
+                      className={`flex items-center justify-between rounded-2xl border px-3 py-3 ${isDark ? "border-white/10 bg-slate-900/80" : "border-slate-200/80 bg-white/90"}`}
+                    >
                       <div>
-                        <p className={`text-sm font-semibold ${textPrimary}`}>{order.id}</p>
-                        <p className={`text-xs ${textSecondary}`}>{order.product}</p>
+                        <p className={`text-sm font-semibold ${textPrimary}`}>
+                          {order.id}
+                        </p>
+                        <p className={`text-xs ${textSecondary}`}>
+                          {order.product}
+                        </p>
                       </div>
                       <div className="text-right">
-                        <p className={`text-sm font-semibold ${textPrimary}`}>{order.amount}</p>
-                        <p className={`text-xs ${order.status === 'Paid' ? 'text-emerald-600 dark:text-emerald-300' : 'text-amber-600 dark:text-amber-300'}`}>
+                        <p className={`text-sm font-semibold ${textPrimary}`}>
+                          {order.amount}
+                        </p>
+                        <p
+                          className={`text-xs ${order.status === "Paid" ? "text-emerald-600 dark:text-emerald-300" : "text-amber-600 dark:text-amber-300"}`}
+                        >
                           {order.status}
                         </p>
                       </div>
@@ -445,18 +850,29 @@ function CreateStoreSection() {
       <div className="absolute right-0 top-24 -z-10 h-72 w-72 rounded-full bg-violet-300/20 blur-3xl dark:bg-violet-500/12" />
 
       <div className="flex flex-col gap-8 lg:gap-10">
-        <div className={`rounded-[36px] border p-5 backdrop-blur sm:p-6 lg:p-8 ${outerShell}`}>
+        <div
+          className={`rounded-[36px] border p-5 backdrop-blur sm:p-6 lg:p-8 ${outerShell}`}
+        >
           <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
-            <div className={`flex flex-col justify-between rounded-[30px] border p-6 sm:p-7 lg:p-8 ${heroCard}`}>
+            <div
+              className={`flex flex-col justify-between rounded-[30px] border p-6 sm:p-7 lg:p-8 ${heroCard}`}
+            >
               <div>
-                <p className={`text-sm uppercase tracking-[0.32em] ${isDark ? 'text-cyan-200/80' : 'text-cyan-700/70'}`}>
+                <p
+                  className={`text-sm uppercase tracking-[0.32em] ${isDark ? "text-cyan-200/80" : "text-cyan-700/70"}`}
+                >
                   Digital commerce
                 </p>
-                <h2 className={`mt-3 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[50px] lg:leading-[1.05] ${isDark ? 'text-white' : 'text-slate-950'}`}>
+                <h2
+                  className={`mt-3 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[50px] lg:leading-[1.05] ${isDark ? "text-white" : "text-slate-950"}`}
+                >
                   Create Your Own Digital Store with Secure Payments
                 </h2>
-                <p className={`mt-4 max-w-2xl text-sm leading-6 sm:text-base lg:text-[1.02rem] ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
-                  Share your custom store link, manage storefronts, and keep every transaction protected with a clean, modern workflow.
+                <p
+                  className={`mt-4 max-w-2xl text-sm leading-6 sm:text-base lg:text-[1.02rem] ${isDark ? "text-slate-400" : "text-slate-600"}`}
+                >
+                  Share your custom store link, manage storefronts, and keep
+                  every transaction protected with a clean, modern workflow.
                 </p>
               </div>
 
@@ -465,20 +881,20 @@ function CreateStoreSection() {
                   type="button"
                   className="rounded-full border border-cyan-300/30 bg-[linear-gradient(135deg,rgba(74,111,223,0.95),rgba(172,114,230,0.95))] px-5 py-3 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(76,103,199,0.32)] transition hover:-translate-y-0.5"
                 >
-                    <span className="inline-flex items-center gap-2">
-                      <StoreIcon className="h-4 w-4" />
-                      Create your store
-                      <ArrowRightIcon className="h-4 w-4" />
-                    </span>
+                  <span className="inline-flex items-center gap-2">
+                    <StoreIcon className="h-4 w-4" />
+                    Create your store
+                    <ArrowRightIcon className="h-5 w-5" />
+                  </span>
                 </button>
                 <button
                   type="button"
                   className="rounded-full border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-slate-100"
                 >
-                    <span className="inline-flex items-center gap-2">
-                      <GridIcon className="h-4 w-4" />
-                      See demo
-                    </span>
+                  <span className="inline-flex items-center gap-2">
+                    <GridIcon className="h-4 w-4" />
+                    See demo
+                  </span>
                 </button>
               </div>
             </div>
@@ -487,9 +903,15 @@ function CreateStoreSection() {
           </div>
         </div>
 
-        <div className={`space-y-5 rounded-[30px] border px-5 py-6 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:px-6 sm:py-7 ${sectionCard}`}>
+        <div
+          className={`space-y-5 rounded-[30px] border px-5 py-6 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:px-6 sm:py-7 ${sectionCard}`}
+        >
           <div className="text-center">
-            <p className={`text-lg font-medium ${isDark ? 'text-slate-200' : 'text-slate-800'}`}>Trust Strip</p>
+            <p
+              className={`text-lg font-medium ${isDark ? "text-slate-200" : "text-slate-800"}`}
+            >
+              Trust Strip
+            </p>
           </div>
           <div className="grid gap-3 md:grid-cols-3">
             {trustStats.map((stat) => (
@@ -498,7 +920,9 @@ function CreateStoreSection() {
           </div>
         </div>
 
-        <div className={`grid gap-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-6 ${sectionCard}`}>
+        <div
+          className={`grid gap-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-6 ${sectionCard}`}
+        >
           <SectionTitle
             eyebrow="Your Link Section"
             title="dsell.store/yourname"
@@ -506,8 +930,12 @@ function CreateStoreSection() {
           />
 
           <div className="grid gap-4 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-            <div className={`rounded-[30px] border p-4 shadow-[0_16px_32px_rgba(15,23,42,0.08)] ${isDark ? 'border-white/10 bg-[linear-gradient(135deg,rgba(10,15,28,0.95),rgba(20,26,42,0.92))]' : 'border-slate-200/80 bg-[linear-gradient(135deg,rgba(245,248,252,0.98),rgba(228,240,248,0.94))]'}`}>
-              <div className={`rounded-[24px] border px-5 py-4 text-2xl font-medium tracking-tight sm:px-6 sm:py-5 sm:text-3xl ${isDark ? 'border-white/10 bg-slate-950/80 text-slate-200' : 'border-slate-200/70 bg-white/88 text-slate-400'}`}>
+            <div
+              className={`rounded-[30px] border p-4 shadow-[0_16px_32px_rgba(15,23,42,0.08)] ${isDark ? "border-white/10 bg-[linear-gradient(135deg,rgba(10,15,28,0.95),rgba(20,26,42,0.92))]" : "border-slate-200/80 bg-[linear-gradient(135deg,rgba(245,248,252,0.98),rgba(228,240,248,0.94))]"}`}
+            >
+              <div
+                className={`rounded-[24px] border px-5 py-4 text-2xl font-medium tracking-tight sm:px-6 sm:py-5 sm:text-3xl ${isDark ? "border-white/10 bg-slate-950/80 text-slate-200" : "border-slate-200/70 bg-white/88 text-slate-400"}`}
+              >
                 <span className="inline-flex items-center gap-3">
                   <ShieldIcon className="h-5 w-5 text-cyan-600 dark:text-cyan-200" />
                   dsell.store/yourname
@@ -517,53 +945,96 @@ function CreateStoreSection() {
           </div>
         </div>
 
-        <div className={`space-y-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-6 ${sectionCard}`}>
+        <VerticalFlowArrow isDark={isDark} />
+
+        <div
+          className={`space-y-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-6 ${sectionCard}`}
+        >
           <SectionTitle
             eyebrow="How It Works"
             title="A simple 7-step flow"
             text="Guide buyers through registration, store creation, product listing, and release without clutter or visual noise."
           />
 
-          <div className={`rounded-[28px] border px-4 py-5 sm:px-6 sm:py-6 ${innerCard}`}>
-            <div className="grid gap-4 md:grid-cols-7">
+          <div
+            className={`rounded-[28px] border px-4 py-5 sm:px-6 sm:py-6 ${innerCard}`}
+          >
+            <div className="grid gap-5 md:grid-cols-7 md:items-center">
               {howItWorks.map((step, index) => (
-                <StepBubble key={step} index={index} label={step} />
+                <div key={step.label} className="flex items-center gap-2">
+                  <StepBubble label={step.label} icon={step.icon} />
+                  {index < howItWorks.length - 1 && (
+                    <div className="hidden md:flex md:flex-1 md:items-center md:justify-center -mx-1">
+                      <FlowArrow className="h-5 w-5 text-cyan-400 dark:text-purple-400" />
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className={`space-y-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-6 ${sectionCard}`}>
+        <VerticalFlowArrow isDark={isDark} />
+
+        <div
+          className={`space-y-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-6 ${sectionCard}`}
+        >
           <SectionTitle
             eyebrow="Storefront Preview"
             title="A clean product shelf with analytics"
             text="The storefront preview stays centered, polished, and functional in both themes, with the same layout rhythm as the reference."
           />
 
-          <div className={`rounded-[32px] border p-4 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-5 ${isDark ? 'border-white/10 bg-[linear-gradient(180deg,rgba(9,14,26,0.98),rgba(15,20,34,0.94))]' : 'border-slate-200/80 bg-[linear-gradient(180deg,rgba(248,250,252,0.96),rgba(236,242,249,0.92))]'}`}>
+          <div
+            className={`rounded-[32px] border p-4 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-5 ${isDark ? "border-white/10 bg-[linear-gradient(180deg,rgba(9,14,26,0.98),rgba(15,20,34,0.94))]" : "border-slate-200/80 bg-[linear-gradient(180deg,rgba(248,250,252,0.96),rgba(236,242,249,0.92))]"}`}
+          >
             <div className="grid gap-4 lg:grid-cols-[240px_1fr]">
-              <div className={`rounded-[26px] border p-4 ${isDark ? 'border-white/10 bg-slate-950/80' : 'border-slate-200/80 bg-white/88'}`}>
-                <div className={`mb-4 h-4 w-28 rounded-full ${isDark ? 'bg-slate-700' : 'bg-slate-200'}`} />
-                <div className={`space-y-3 text-xs ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
-                  {['Dashboard', 'Orders', 'Products', 'Payments', 'Analytics', 'Support'].map((item) => (
-                    <div key={item} className={`rounded-2xl border px-3 py-2 ${isDark ? 'border-white/10 bg-slate-900/80' : 'border-slate-200/70 bg-slate-50'}`}>
+              <div
+                className={`rounded-[26px] border p-4 ${isDark ? "border-white/10 bg-slate-950/80" : "border-slate-200/80 bg-white/88"}`}
+              >
+                <div
+                  className={`mb-4 h-4 w-28 rounded-full ${isDark ? "bg-slate-700" : "bg-slate-200"}`}
+                />
+                <div
+                  className={`space-y-3 text-xs ${isDark ? "text-slate-400" : "text-slate-500"}`}
+                >
+                  {[
+                    "Dashboard",
+                    "Orders",
+                    "Products",
+                    "Payments",
+                    "Analytics",
+                    "Support",
+                  ].map((item) => (
+                    <div
+                      key={item}
+                      className={`rounded-2xl border px-3 py-2 ${isDark ? "border-white/10 bg-slate-900/80" : "border-slate-200/70 bg-slate-50"}`}
+                    >
                       {item}
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className={`space-y-4 rounded-[26px] border p-4 sm:p-5 ${isDark ? 'border-white/10 bg-slate-950/80' : 'border-slate-200/80 bg-white/88'}`}>
+              <div
+                className={`space-y-4 rounded-[26px] border p-4 sm:p-5 ${isDark ? "border-white/10 bg-slate-950/80" : "border-slate-200/80 bg-white/88"}`}
+              >
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
-                    <p className={`text-sm font-semibold ${isDark ? 'text-white' : 'text-slate-900'}`}>
+                    <p
+                      className={`text-sm font-semibold ${isDark ? "text-white" : "text-slate-900"}`}
+                    >
                       dsell store
                     </p>
-                    <p className={`text-xs ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+                    <p
+                      className={`text-xs ${isDark ? "text-slate-400" : "text-slate-500"}`}
+                    >
                       Console view with product cards and quick stats.
                     </p>
                   </div>
-                  <div className={`rounded-full px-3 py-1 text-xs ${isDark ? 'bg-white/10 text-slate-300' : 'bg-slate-100 text-slate-600'}`}>
+                  <div
+                    className={`rounded-full px-3 py-1 text-xs ${isDark ? "bg-white/10 text-slate-300" : "bg-slate-100 text-slate-600"}`}
+                  >
                     Location: storefront
                   </div>
                 </div>
@@ -582,9 +1053,20 @@ function CreateStoreSection() {
                     ["$36.00", "Total sales"],
                     ["2", "Active alerts"],
                   ].map(([value, label]) => (
-                    <div key={label} className={`rounded-2xl border p-3 ${isDark ? 'border-white/10 bg-slate-900/80' : 'border-slate-200/80 bg-slate-50'}`}>
-                      <p className={`text-sm font-semibold ${isDark ? 'text-white' : 'text-slate-900'}`}>{value}</p>
-                      <p className={`text-[11px] ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>{label}</p>
+                    <div
+                      key={label}
+                      className={`rounded-2xl border p-3 ${isDark ? "border-white/10 bg-slate-900/80" : "border-slate-200/80 bg-slate-50"}`}
+                    >
+                      <p
+                        className={`text-sm font-semibold ${isDark ? "text-white" : "text-slate-900"}`}
+                      >
+                        {value}
+                      </p>
+                      <p
+                        className={`text-[11px] ${isDark ? "text-slate-400" : "text-slate-500"}`}
+                      >
+                        {label}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -593,7 +1075,9 @@ function CreateStoreSection() {
           </div>
         </div>
 
-        <div className={`space-y-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-6 ${sectionCard}`}>
+        <div
+          className={`space-y-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] sm:p-6 ${sectionCard}`}
+        >
           <SectionTitle
             eyebrow="Features & Use Cases"
             title="Flexible commerce blocks"
@@ -607,7 +1091,9 @@ function CreateStoreSection() {
           </div>
         </div>
 
-        <div className={`grid gap-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] lg:grid-cols-[0.95fr_1.05fr] sm:p-6 ${sectionCard}`}>
+        <div
+          className={`grid gap-5 rounded-[30px] border p-5 shadow-[0_18px_40px_rgba(15,23,42,0.08)] lg:grid-cols-[0.95fr_1.05fr] sm:p-6 ${sectionCard}`}
+        >
           <div className="space-y-4">
             <SectionTitle
               eyebrow="Security & FAQ"
@@ -615,12 +1101,21 @@ function CreateStoreSection() {
               text="The left side can hold a visual lock diagram while the right side answers common payment questions in a compact, readable format."
             />
 
-            <div className={`rounded-[28px] border p-4 ${isDark ? 'border-white/10 bg-[linear-gradient(180deg,rgba(7,12,24,0.95),rgba(16,22,36,0.92))]' : 'border-slate-200/80 bg-[linear-gradient(180deg,rgba(249,251,255,0.95),rgba(231,239,249,0.9))]'}`}>
+            <div
+              className={`rounded-[28px] border p-4 ${isDark ? "border-white/10 bg-[linear-gradient(180deg,rgba(7,12,24,0.95),rgba(16,22,36,0.92))]" : "border-slate-200/80 bg-[linear-gradient(180deg,rgba(249,251,255,0.95),rgba(231,239,249,0.9))]"}`}
+            >
               <div className="grid grid-cols-3 gap-2 text-center text-xs text-slate-500 dark:text-slate-400">
-                {['List', 'Hold', 'Release'].map((item, index) => (
-                  <div key={item} className={`rounded-2xl border p-3 ${isDark ? 'border-white/10 bg-slate-900/80' : 'border-slate-200/70 bg-white/80'}`}>
+                {["List", "Hold", "Release"].map((item, index) => (
+                  <div
+                    key={item}
+                    className={`rounded-2xl border p-3 ${isDark ? "border-white/10 bg-slate-900/80" : "border-slate-200/70 bg-white/80"}`}
+                  >
                     <div className="mx-auto mb-2 h-10 w-10 rounded-full border border-cyan-200/30 bg-[linear-gradient(135deg,rgba(34,211,238,0.18),rgba(168,85,247,0.18))]" />
-                    <p className={`font-medium ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>{index + 1}. {item}</p>
+                    <p
+                      className={`font-medium ${isDark ? "text-slate-200" : "text-slate-700"}`}
+                    >
+                      {index + 1}. {item}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -629,12 +1124,21 @@ function CreateStoreSection() {
 
           <div className="space-y-3 mt-7">
             {faqItems.map((item) => (
-              <details key={item.question} className={`group rounded-[22px] border p-4 ${isDark ? 'border-white/10 bg-slate-900/80' : 'border-slate-200/80 bg-white/88'}`}>
-                <summary className={`flex cursor-pointer list-none items-center justify-between gap-4 text-left text-sm font-medium ${isDark ? 'text-white' : 'text-slate-900'}`}>
+              <details
+                key={item.question}
+                className={`group rounded-[22px] border p-4 ${isDark ? "border-white/10 bg-slate-900/80" : "border-slate-200/80 bg-white/88"}`}
+              >
+                <summary
+                  className={`flex cursor-pointer list-none items-center justify-between gap-4 text-left text-sm font-medium ${isDark ? "text-white" : "text-slate-900"}`}
+                >
                   <span>{item.question}</span>
-                  <span className="text-lg text-slate-400 transition group-open:rotate-45">+</span>
+                  <span className="text-lg text-slate-400 transition group-open:rotate-45">
+                    +
+                  </span>
                 </summary>
-                <p className={`mt-3 text-sm leading-6 ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
+                <p
+                  className={`mt-3 text-sm leading-6 ${isDark ? "text-slate-400" : "text-slate-600"}`}
+                >
                   {item.answer}
                 </p>
               </details>
@@ -642,14 +1146,20 @@ function CreateStoreSection() {
           </div>
         </div>
 
-        <footer className={`rounded-[30px] border px-5 py-4 shadow-[0_18px_40px_rgba(15,23,42,0.08)] ${sectionCard}`}>
+        <footer
+          className={`rounded-[30px] border px-5 py-4 shadow-[0_18px_40px_rgba(15,23,42,0.08)] ${sectionCard}`}
+        >
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div className={`flex flex-wrap items-center gap-4 text-sm ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
-              {['Terms', 'Privacy', 'Contact', 'Twitter', 'Discord'].map((item) => (
-                <a key={item} href="#" className="nav-link text-sm">
-                  {item}
-                </a>
-              ))}
+            <div
+              className={`flex flex-wrap items-center gap-4 text-sm ${isDark ? "text-slate-400" : "text-slate-500"}`}
+            >
+              {["Terms", "Privacy", "Contact", "Twitter", "Discord"].map(
+                (item) => (
+                  <a key={item} href="#" className="nav-link text-sm">
+                    {item}
+                  </a>
+                ),
+              )}
             </div>
 
             <button
