@@ -10,7 +10,7 @@
   }
 
   #root {
-    @apply w-full max-w-screen-lg mx-auto text-center border-x border-gray-200 min-h-screen flex flex-col box-border;
+    @apply w-full mx-auto text-center border-x border-gray-200 min-h-screen flex flex-col box-border;
   }
   
   html.dark #root {
@@ -18,14 +18,9 @@
   }
 
   h1,
-  h2 {
-    @apply font-semibold text-gray-900;
-  }
-  
-  html.dark h1,
-  html.dark h2 {
-    @apply text-gray-100;
-  }
+h2 {
+  @apply font-semibold;
+}
 
   h1 {
     @apply text-5xl lg:text-3xl -tracking-wider m-8 lg:m-5;
@@ -175,4 +170,221 @@
       @apply w-full justify-center;
     }
   }
+}
+
+/* Animated underline links */
+/* NAV LINKS BASE */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.site-nav {
+  border-bottom: 1px solid rgb(229, 231, 235);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+html.dark .site-nav {
+  border-bottom-color: rgb(55, 65, 81);
+  background: rgba(17, 24, 39, 0.92);
+}
+
+.mobile-nav {
+  border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+html.dark .mobile-nav {
+  border-bottom-color: rgb(55, 65, 81);
+}
+
+.nav-logo-mark {
+  background: linear-gradient(135deg, rgb(147, 51, 234), rgb(126, 34, 206));
+  box-shadow: 0 10px 24px rgba(147, 51, 234, 0.24);
+}
+
+html.dark .nav-logo-mark {
+  box-shadow:
+    0 0 16px rgba(168, 85, 247, 0.45),
+    0 10px 24px rgba(126, 34, 206, 0.22);
+}
+
+.nav-toggle {
+  color: rgb(55, 65, 81);
+  background: rgb(243, 244, 246);
+  border: 1px solid rgb(229, 231, 235);
+}
+
+html.dark .nav-toggle {
+  color: rgb(229, 231, 235);
+  background: rgb(55, 65, 81);
+  border-color: rgb(75, 85, 99);
+}
+
+.nav-discord {
+  color: rgb(255, 255, 255);
+  background: rgb(88, 101, 242);
+  box-shadow: 0 10px 22px rgba(88, 101, 242, 0.16);
+}
+
+.nav-discord:hover {
+  filter: brightness(1.08);
+}
+
+html.dark .nav-discord:hover {
+  box-shadow:
+    0 0 14px rgba(88, 101, 242, 0.55),
+    0 10px 22px rgba(88, 101, 242, 0.16);
+}
+
+/* LIGHT MODE (clean underline) */
+html:not(.dark) .nav-link {
+  color: #374151;
+}
+
+html:not(.dark) .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #7c3aed;
+  transition: width 0.25s ease;
+}
+
+html:not(.dark) .nav-link:hover {
+  color: #7c3aed;
+}
+
+html:not(.dark) .nav-link:hover::after {
+  width: 100%;
+}
+
+/* DARK MODE (neon glow underline) */
+html.dark .nav-link {
+  color: #e5e7eb;
+}
+
+html.dark .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: linear-gradient(90deg, #a855f7, #7e22ce);
+  box-shadow: 0 0 10px #9333ea;
+  transition: width 0.25s ease;
+}
+
+html.dark .nav-link:hover {
+  color: #c084fc;
+}
+
+html.dark .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger-line {
+  width: 22px;
+  height: 2px;
+  margin: 3px 0;
+  background: currentColor;
+  transition: all 0.3s ease;
+}
+
+/* Animation */
+.rotate-top {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.rotate-bottom {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.fade {
+  opacity: 0;
+}
+
+/* ================= NEON IMPROVED ================= */
+
+/* Better heading glow (less ugly in light mode) */
+/* Neon Glow Text (FIXED) */
+.neon-text {
+  text-shadow: none;
+}
+
+html.dark .neon-text {
+  text-shadow:
+    0 0 6px rgba(192, 132, 252, 0.85),
+    0 0 14px rgba(168, 85, 247, 0.7),
+    0 0 24px rgba(126, 34, 206, 0.45);
+}
+
+.brand-title {
+  color: rgb(31, 41, 55);
+  transition: color 0.3s ease;
+}
+
+html.dark .brand-title {
+  color: rgb(233, 213, 255);
+}
+
+.brand-accent {
+  color: rgb(168, 85, 247);
+  transition: color 0.3s ease;
+}
+
+html.dark .brand-accent {
+  color: rgb(192, 132, 252);
+}
+
+html.dark .neon-text {
+  text-shadow:
+    0 0 6px #a855f7,
+    0 0 12px #9333ea,
+    0 0 24px #7e22ce;
+}
+/* ================= LIGHT THEME FIX ================= */
+
+/* Make light theme less bland */
+body {
+  background: linear-gradient(135deg, #ffffff, #f5f3ff);
+}
+
+/* Dark theme stays premium */
+html.dark body {
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+}
+
+/* Navbar polish */
+nav {
+  backdrop-filter: blur(12px);
+}
+
+/* Links better visibility */
+.nav-link {
+  font-weight: 500;
+}
+
+html.dark .nav-link {
+  color: #e5e7eb;
+}
+
+/* ================= HERO FIX ================= */
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+html.dark .hero-title {
+  color: #f3e8ff;
+}
+
+html:not(.dark) .hero-title {
+  color: #1f2937;
 }
