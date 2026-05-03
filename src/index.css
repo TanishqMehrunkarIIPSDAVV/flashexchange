@@ -1,390 +1,155 @@
 @import "tailwindcss";
 
 @layer base {
-  body {
-    @apply m-0 transition-colors duration-300 bg-white text-gray-900;
+  :root {
+    color-scheme: light dark;
   }
-  
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    @apply m-0 min-h-screen overflow-x-hidden text-slate-900 transition-colors duration-300;
+    background:
+      radial-gradient(circle at top left, rgba(34, 211, 238, 0.12), transparent 24%),
+      radial-gradient(circle at top right, rgba(168, 85, 247, 0.12), transparent 28%),
+      linear-gradient(180deg, #ffffff 0%, #f7f9fc 58%, #eef3f9 100%);
+  }
+
   html.dark body {
-    @apply bg-gray-900 text-gray-100;
+    @apply text-slate-100;
+    background:
+      radial-gradient(circle at top left, rgba(34, 211, 238, 0.12), transparent 24%),
+      radial-gradient(circle at top right, rgba(168, 85, 247, 0.18), transparent 28%),
+      linear-gradient(180deg, #101828 0%, #050816 52%, #02040a 100%);
   }
 
   #root {
-    @apply w-full mx-auto text-center border-x border-gray-200 min-h-screen flex flex-col box-border;
-  }
-  
-  html.dark #root {
-    @apply border-gray-700;
+    @apply w-full box-border;
   }
 
   h1,
-h2 {
-  @apply font-semibold;
-}
-
-  h1 {
-    @apply text-5xl lg:text-3xl -tracking-wider m-8 lg:m-5;
-  }
-
-  h2 {
-    @apply text-2xl lg:text-xl leading-tight -tracking-wide mb-2 lg:text-base;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply m-0 font-semibold tracking-tight;
   }
 
   p {
     @apply m-0;
   }
 
-  code {
-    @apply font-mono text-sm inline-block px-2 py-1 rounded bg-gray-200 text-gray-900;
-  }
-  
-  html.dark code {
-    @apply bg-gray-800 text-gray-100;
+  a {
+    @apply text-inherit;
   }
 }
 
 @layer components {
-  .counter {
-    @apply text-base px-3 py-2 rounded-md text-purple-600 bg-purple-100 border-2 border-transparent transition-colors duration-300 mb-6 cursor-pointer;
-  }
-  
-  html.dark .counter {
-    @apply text-purple-400 bg-purple-900/30;
+  .site-nav {
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom-color: rgba(148, 163, 184, 0.12);
+    box-shadow: 0 12px 34px rgba(15, 23, 42, 0.05);
   }
 
-  .counter:hover {
-    @apply border-purple-400;
-  }
-  
-  html.dark .counter:hover {
-    @apply border-purple-500;
+  html.dark .site-nav {
+    background: rgba(4, 10, 24, 0.78);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 40px rgba(2, 6, 23, 0.28);
   }
 
-  .counter:focus-visible {
-    @apply outline-2 outline-purple-600 outline-offset-2;
-  }
-  
-  html.dark .counter:focus-visible {
-    @apply outline-purple-400;
-  }
-
-  .hero {
-    @apply relative;
+  .nav-logo-mark {
+    background: linear-gradient(135deg, #00f0f0, #9333ea 65%, #4f46e5);
+    box-shadow:
+      0 0 16px rgba(34, 211, 238, 0.35),
+      0 0 28px rgba(168, 85, 247, 0.2);
   }
 
-  .hero .base,
-  .hero .framework,
-  .hero .vite {
-    @apply mx-auto;
+  .nav-toggle {
+    color: #334155;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(148, 163, 184, 0.16);
   }
 
-  .hero .base {
-    @apply w-40 relative z-0;
+  html.dark .nav-toggle {
+    color: #e2e8f0;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.18);
   }
 
-  .hero .framework,
-  .hero .vite {
-    @apply absolute;
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.25s ease;
+    color: #475569;
   }
 
-  .hero .framework {
-    @apply z-10;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4);
+  html.dark .nav-link {
+    color: #cbd5e1;
   }
 
-  .hero .vite {
-    @apply z-0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8);
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #22d3ee, #a855f7);
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.55);
+    transition: width 0.25s ease;
   }
 
-  #next-steps ul {
-    @apply list-none p-0 flex gap-2 mt-8;
+  .nav-link:hover {
+    color: #0f172a;
   }
 
-  #next-steps ul .logo {
-    @apply h-5;
+  html.dark .nav-link:hover {
+    color: #e2e8f0;
   }
 
-  #next-steps ul a {
-    @apply text-gray-900 text-sm rounded-md bg-gray-100 flex px-3 py-2 items-center gap-2 no-underline transition-shadow duration-300 hover:shadow-lg;
-  }
-  
-  html.dark #next-steps ul a {
-    @apply text-gray-100 bg-gray-700;
+  .nav-link:hover::after {
+    width: 100%;
   }
 
-  #next-steps ul a .button-icon {
-    @apply h-5 w-5;
+  .hamburger-line {
+    width: 22px;
+    height: 2px;
+    border-radius: 9999px;
+    background: currentColor;
+    transition: all 0.3s ease;
+    color: #334155;
   }
 
-  #spacer {
-    @apply h-20 border-t border-gray-200 lg:h-12;
-  }
-  
-  html.dark #spacer {
-    @apply border-gray-700;
+  html.dark .hamburger-line {
+    color: #e2e8f0;
   }
 
-  .ticks {
-    @apply relative w-full;
+  .rotate-top {
+    transform: translateY(8px) rotate(45deg);
   }
 
-  .ticks::before,
-  .ticks::after {
-    @apply absolute top-0 border-4 border-transparent;
-    content: '';
-    margin-top: -4.5px;
+  .rotate-bottom {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
-  .ticks::before {
-    @apply left-0 border-l-gray-200;
-  }
-  
-  html.dark .ticks::before {
-    @apply border-l-gray-700;
+  .fade {
+    opacity: 0;
   }
 
-  .ticks::after {
-    @apply right-0 border-r-gray-200;
-  }
-  
-  html.dark .ticks::after {
-    @apply border-r-gray-700;
+  .surface-light {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(148, 163, 184, 0.16);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
   }
 
-  @media (max-width: 1024px) {
-    #next-steps ul {
-      @apply flex-wrap justify-center mt-5;
-    }
-
-    #next-steps ul li {
-      @apply flex-1 basis-1/2;
-    }
-
-    #next-steps ul a {
-      @apply w-full justify-center;
-    }
+  .surface-dark {
+    background: rgba(2, 6, 23, 0.72);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 14px 38px rgba(2, 6, 23, 0.24);
   }
-}
-
-/* Animated underline links */
-/* NAV LINKS BASE */
-.nav-link {
-  position: relative;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-.site-nav {
-  border-bottom: 1px solid rgb(229, 231, 235);
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-}
-
-html.dark .site-nav {
-  border-bottom-color: rgb(55, 65, 81);
-  background: rgba(17, 24, 39, 0.92);
-}
-
-.mobile-nav {
-  border-bottom: 1px solid rgb(229, 231, 235);
-}
-
-html.dark .mobile-nav {
-  border-bottom-color: rgb(55, 65, 81);
-}
-
-.nav-logo-mark {
-  background: linear-gradient(135deg, rgb(147, 51, 234), rgb(126, 34, 206));
-  box-shadow: 0 10px 24px rgba(147, 51, 234, 0.24);
-}
-
-html.dark .nav-logo-mark {
-  box-shadow:
-    0 0 16px rgba(168, 85, 247, 0.45),
-    0 10px 24px rgba(126, 34, 206, 0.22);
-}
-
-.nav-toggle {
-  color: rgb(55, 65, 81);
-  background: rgb(243, 244, 246);
-  border: 1px solid rgb(229, 231, 235);
-}
-
-html.dark .nav-toggle {
-  color: rgb(229, 231, 235);
-  background: rgb(55, 65, 81);
-  border-color: rgb(75, 85, 99);
-}
-
-.nav-discord {
-  color: rgb(255, 255, 255);
-  background: rgb(88, 101, 242);
-  box-shadow: 0 10px 22px rgba(88, 101, 242, 0.16);
-}
-
-.nav-discord:hover {
-  filter: brightness(1.08);
-}
-
-html.dark .nav-discord:hover {
-  box-shadow:
-    0 0 14px rgba(88, 101, 242, 0.55),
-    0 10px 22px rgba(88, 101, 242, 0.16);
-}
-
-/* LIGHT MODE (clean underline) */
-html:not(.dark) .nav-link {
-  color: #374151;
-}
-
-html:not(.dark) .nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background: #7c3aed;
-  transition: width 0.25s ease;
-}
-
-html:not(.dark) .nav-link:hover {
-  color: #7c3aed;
-}
-
-html:not(.dark) .nav-link:hover::after {
-  width: 100%;
-}
-
-/* DARK MODE (neon glow underline) */
-html.dark .nav-link {
-  color: #e5e7eb;
-}
-
-html.dark .nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background: linear-gradient(90deg, #a855f7, #7e22ce);
-  box-shadow: 0 0 10px #9333ea;
-  transition: width 0.25s ease;
-}
-
-html.dark .nav-link:hover {
-  color: #c084fc;
-}
-
-html.dark .nav-link:hover::after {
-  width: 100%;
-}
-
-/* ================= HAMBURGER ================= */
-.hamburger-line {
-  width: 22px;
-  height: 2px;
-  margin: 3px 0;
-  background: currentColor;
-  transition: all 0.3s ease;
-}
-
-/* Animation */
-.rotate-top {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.rotate-bottom {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.fade {
-  opacity: 0;
-}
-
-/* ================= NEON IMPROVED ================= */
-
-/* Better heading glow (less ugly in light mode) */
-/* Neon Glow Text (FIXED) */
-.neon-text {
-  text-shadow: none;
-}
-
-html.dark .neon-text {
-  text-shadow:
-    0 0 6px rgba(192, 132, 252, 0.85),
-    0 0 14px rgba(168, 85, 247, 0.7),
-    0 0 24px rgba(126, 34, 206, 0.45);
-}
-
-.brand-title {
-  color: rgb(31, 41, 55);
-  transition: color 0.3s ease;
-}
-
-html.dark .brand-title {
-  color: rgb(233, 213, 255);
-}
-
-.brand-accent {
-  color: rgb(168, 85, 247);
-  transition: color 0.3s ease;
-}
-
-html.dark .brand-accent {
-  color: rgb(192, 132, 252);
-}
-
-html.dark .neon-text {
-  text-shadow:
-    0 0 6px #a855f7,
-    0 0 12px #9333ea,
-    0 0 24px #7e22ce;
-}
-/* ================= LIGHT THEME FIX ================= */
-
-/* Make light theme less bland */
-body {
-  background: linear-gradient(135deg, #ffffff, #f5f3ff);
-}
-
-/* Dark theme stays premium */
-html.dark body {
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
-}
-
-/* Navbar polish */
-nav {
-  backdrop-filter: blur(12px);
-}
-
-/* Links better visibility */
-.nav-link {
-  font-weight: 500;
-}
-
-html.dark .nav-link {
-  color: #e5e7eb;
-}
-
-/* ================= HERO FIX ================= */
-
-.hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-html.dark .hero-title {
-  color: #f3e8ff;
-}
-
-html:not(.dark) .hero-title {
-  color: #1f2937;
 }

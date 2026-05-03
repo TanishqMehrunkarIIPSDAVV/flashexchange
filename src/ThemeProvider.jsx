@@ -2,18 +2,9 @@ import React, { createContext, useState, useEffect } from 'react';
 
 export const ThemeContext = createContext();
 
+const THEME_STORAGE_KEY = 'theme-v2';
+
 function getInitialTheme() {
-  // Check localStorage first
-  if (typeof localStorage !== 'undefined') {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      return savedTheme === 'dark';
-    }
-  }
-  // Check system preference
-  if (typeof window !== 'undefined') {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
   return false;
 }
 
@@ -30,13 +21,13 @@ export function ThemeProvider({ children }) {
   const initialTheme = getInitialTheme();
   const [isDark, setIsDark] = useState(initialTheme);
 
-  // Apply theme on mount
   useEffect(() => {
     applyTheme(isDark);
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(THEME_STORAGE_KEY, isDark ? 'dark' : 'light');
+    }
   }, [isDark]);
 
-  // Also apply immediately to avoid flash
   useEffect(() => {
     applyTheme(initialTheme);
   }, []);
