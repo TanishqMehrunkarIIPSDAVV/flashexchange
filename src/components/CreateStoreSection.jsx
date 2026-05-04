@@ -47,36 +47,20 @@ function ShieldIcon({ className = "h-4 w-4" }) {
 function StoreIcon({ className = "h-4 w-4" }) {
   return (
     <svg
-      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      color="currentColor"
       fill="none"
-      aria-hidden="true"
-      className={className}
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
-      <path
-        d="M3 7h14l-1 3H4L3 7Z"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M5 10v6h10v-6"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M7 16v-3h6v3"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M4.2 4.8 5.3 7h9.4l1.1-2.2"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M3.50002 10V15C3.50002 17.8284 3.50002 19.2426 4.37869 20.1213C5.25737 21 6.67159 21 9.50002 21H14.5C17.3284 21 18.7427 21 19.6213 20.1213C20.5 19.2426 20.5 17.8284 20.5 15V10" />
+      <path d="M17 7.50184C17 8.88255 15.8807 9.99997 14.5 9.99997C13.1193 9.99997 12 8.88068 12 7.49997C12 8.88068 10.8807 9.99997 9.50002 9.99997C8.1193 9.99997 7.00002 8.88068 7.00002 7.49997C7.00002 8.88068 5.82655 9.99997 4.37901 9.99997C3.59984 9.99997 2.90008 9.67567 2.42 9.16087C1.59462 8.2758 2.12561 6.97403 2.81448 5.98842L3.20202 5.45851C4.08386 4.2527 4.52478 3.6498 5.16493 3.32494C5.80508 3.00008 6.55201 3.00018 8.04587 3.00038L15.9551 3.00143C17.4485 3.00163 18.1952 3.00173 18.8351 3.32658C19.475 3.65143 19.9158 4.25414 20.7974 5.45957L21.1855 5.99029C21.8744 6.97589 22.4054 8.27766 21.58 9.16273C21.0999 9.67754 20.4002 10.0018 19.621 10.0018C18.1734 10.0018 17 8.88255 17 7.50184Z" />
+      <path d="M14.9971 17C14.3133 17.6072 13.2247 18 11.9985 18C10.7723 18 9.68376 17.6072 9 17" />
     </svg>
   );
 }
@@ -102,29 +86,46 @@ function GridIcon({ className = "h-4 w-4" }) {
 function TrendIcon({ className = "h-4 w-4" }) {
   return (
     <svg
-      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      color="currentColor"
       fill="none"
-      aria-hidden="true"
-      className={className}
+      stroke="currentColor"
+      strokeWidth="1.5"
     >
+      <path d="M7 17L7 13" strokeLinecap="round" />
+      <path d="M12 17L12 7" strokeLinecap="round" />
+      <path d="M17 17L17 11" strokeLinecap="round" />
       <path
-        d="M3 14.5 7.2 10.3 10.4 12.8 16.8 6.5"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M12.8 6.5h4v4"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
+        d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
         strokeLinejoin="round"
       />
     </svg>
   );
 }
 
+function PaymentIcon({ className = "h-4 w-4" }) {
+  return(
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M13.5 15H6C4.11438 15 3.17157 15 2.58579 14.4142C2 13.8284 2 12.8856 2 11V7C2 5.11438 2 4.17157 2.58579 3.58579C3.17157 3 4.11438 3 6 3H18C19.8856 3 20.8284 3 21.4142 3.58579C22 4.17157 22 5.11438 22 7V12C22 12.9319 22 13.3978 21.8478 13.7654C21.6448 14.2554 21.2554 14.6448 20.7654 14.8478C20.3978 15 19.9319 15 19 15" />
+    <path d="M14 9C14 10.1045 13.1046 11 12 11C10.8954 11 10 10.1045 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" />
+    <path d="M13 17C13 15.3431 14.3431 14 16 14V12C16 10.3431 17.3431 9 19 9V14.5C19 16.8346 19 18.0019 18.5277 18.8856C18.1548 19.5833 17.5833 20.1548 16.8856 20.5277C16.0019 21 14.8346 21 12.5 21H12C10.1362 21 9.20435 21 8.46927 20.6955C7.48915 20.2895 6.71046 19.5108 6.30448 18.5307C6 17.7956 6 16.8638 6 15" />
+</svg>
+  );
+}
+
+function UptimeIcon({ className = "h-4 w-4" }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20C10 21.1046 10.8954 22 12 22Z" />
+    <path d="M12 2C8.96243 2 6.5 4.46243 6.5 7.5C6.5 10.0176 8.1915 12.14 10.5 12.793L12 15L13.5 12.793C15.8085 12.14 17.5 10.0176 17.5 7.5C17.5 4.46243 15.0376 2 12 2Z" />
+    <path d="M12 5V7.5L13.5 8.5" />
+    <path d="M14 20H21M10 20H3" />
+</svg>
+  );
+}
 function CheckIcon({ className = "h-4 w-4" }) {
   return (
     <svg
@@ -144,7 +145,7 @@ function CheckIcon({ className = "h-4 w-4" }) {
   );
 }
 
-function FlowArrow({ className = "h-6 w-6 text-cyan-400 dark:text-cyan-300" }) {
+function FlowArrow({ className = "h-6 w-6 text-cyan-400" }) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -186,93 +187,72 @@ function VerticalFlowArrow({ isDark = false }) {
 
 function RegisterIcon({ className = "h-7 w-7" }) {
   return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      aria-hidden="true"
-      className={className}
-    >
-      <path d="M10 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM3.5 13a6.5 6.5 0 1 1 13 0v1.5H3.5V13Z" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M15 8C15 5.23858 12.7614 3 10 3C7.23858 3 5 5.23858 5 8C5 10.7614 7.23858 13 10 13C12.7614 13 15 10.7614 15 8Z" />
+    <path d="M17.5 21L17.5 14M14 17.5H21" />
+    <path d="M3 20C3 16.134 6.13401 13 10 13C11.4872 13 12.8662 13.4638 14 14.2547" />
+</svg>
   );
 }
 
 function CreateStoreIcon({ className = "h-7 w-7" }) {
   return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      aria-hidden="true"
-      className={className}
-    >
-      <path d="M4 3h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3.5 9.99988V14.9999C3.5 17.8283 3.5 19.2425 4.37868 20.1212C5.25736 20.9999 6.67157 20.9999 9.5 20.9999H13M20.5 12.9999V9.99988" />
+    <path d="M17 7.50171C17 8.88243 15.8807 9.99985 14.5 9.99985C13.1193 9.99985 12 8.88056 12 7.49985C12 8.88056 10.8807 9.99985 9.5 9.99985C8.11929 9.99985 7 8.88056 7 7.49985C7 8.88056 5.82654 9.99985 4.379 9.99985C3.59983 9.99985 2.90007 9.67555 2.41999 9.16075C1.59461 8.27567 2.12559 6.97391 2.81446 5.9883L3.202 5.45839C4.08384 4.25258 4.52476 3.64968 5.16491 3.32482C5.80507 2.99996 6.552 3.00005 8.04586 3.00025L15.9551 3.00131C17.4485 3.00151 18.1952 3.00161 18.8351 3.32646C19.475 3.65131 19.9158 4.25402 20.7974 5.45945L21.1855 5.99017C21.8744 6.97577 22.4054 8.27754 21.58 9.16261C21.0999 9.67742 20.4001 10.0017 19.621 10.0017C18.1734 10.0017 17 8.88243 17 7.50171Z" />
+    <path d="M14.5 17.9999H20.5M17.5 20.9999V14.9999" />
+</svg>
   );
 }
 
 function ListProductIcon({ className = "h-7 w-7" }) {
   return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      aria-hidden="true"
-      className={className}
-    >
-      <path d="M2 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm3 1h2v2H5V5Zm0 4h2v2H5V9Zm4-4h2v2H9V5Zm0 4h2v2H9V9Zm4-4h2v2h-2V5Zm0 4h2v2h-2V9Z" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+    <path d="M4.5 10.2653V6H19.5V10.2653C19.5 13.4401 19.5 15.0275 18.5237 16.0137C17.5474 17 15.976 17 12.8333 17H11.1667C8.02397 17 6.45262 17 5.47631 16.0137C4.5 15.0275 4.5 13.4401 4.5 10.2653Z" strokeLinejoin="round" />
+    <path d="M4.5 6L5.22115 4.46154C5.78045 3.26838 6.06009 2.6718 6.62692 2.3359C7.19375 2 7.92084 2 9.375 2H14.625C16.0792 2 16.8062 2 17.3731 2.3359C17.9399 2.6718 18.2196 3.26838 18.7788 4.46154L19.5 6" />
+    <path d="M10.5 9H13.5" />
+    <path d="M12 19.5V22M12 19.5L7 19.5M12 19.5H17M7 19.5H4.5C3.11929 19.5 2 20.6193 2 22M7 19.5V22M17 19.5H19.5C20.8807 19.5 22 20.6193 22 22M17 19.5V22" strokeLinejoin="round" />
+</svg>
   );
 }
 
 function ShareLinkIcon({ className = "h-7 w-7" }) {
   return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      aria-hidden="true"
-      className={className}
-    >
-      <path d="M13 6.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm7 7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm-3-6.5a1 1 0 1 0 5.73 1.148L10 10.5l-.27-.852ZM6.5 9.5a1 1 0 1 0 4.366-2.268L9 8l-.634.232Z" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M21 6.5C21 8.15685 19.6569 9.5 18 9.5C16.3431 9.5 15 8.15685 15 6.5C15 4.84315 16.3431 3.5 18 3.5C19.6569 3.5 21 4.84315 21 6.5Z" />
+    <path d="M9 12C9 13.6569 7.65685 15 6 15C4.34315 15 3 13.6569 3 12C3 10.3431 4.34315 9 6 9C7.65685 9 9 10.3431 9 12Z" />
+    <path d="M21 17.5C21 19.1569 19.6569 20.5 18 20.5C16.3431 20.5 15 19.1569 15 17.5C15 15.8431 16.3431 14.5 18 14.5C19.6569 14.5 21 15.8431 21 17.5Z" />
+    <path d="M8.72852 10.7495L15.2285 7.75M8.72852 13.25L15.2285 16.2495" />
+</svg>
   );
 }
 
 function HoldIcon({ className = "h-7 w-7" }) {
   return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      aria-hidden="true"
-      className={className}
-    >
-      <path d="M5.5 13a3.5 3.5 0 0 1-.369-6.98 4 4 0 1 1 7.753-1 4.5 4.5 0 1 1-4.384 5.98Zm4-6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M21 11.1835V8.28041C21 6.64041 21 5.82041 20.5959 5.28541C20.1918 4.75042 19.2781 4.49068 17.4507 3.97122C16.2022 3.61632 15.1016 3.18875 14.2223 2.79841C13.0234 2.26622 12.424 2.00012 12 2.00012C11.576 2.00012 10.9766 2.26622 9.77771 2.79841C8.89839 3.18875 7.79784 3.61632 6.54933 3.97122C4.72193 4.49068 3.80822 4.75042 3.40411 5.28541C3 5.82041 3 6.64041 3 8.28041V11.1835C3 16.8086 8.06277 20.1836 10.594 21.5195C11.2011 21.8399 11.5046 22.0001 12 22.0001C12.4954 22.0001 12.7989 21.8399 13.406 21.5195C15.9372 20.1836 21 16.8086 21 11.1835Z" strokeLinecap="round" />
+    <path d="M12 16.0001C12.1396 16.0001 12.2694 15.9365 12.5289 15.8093L14.6152 14.7869C15.5384 14.3345 16 14.1083 16 13.7501V9.25012M12 16.0001C11.8604 16.0001 11.7306 15.9365 11.4711 15.8093L9.38478 14.7869C8.4616 14.3345 8 14.1083 8 13.7501V9.25012M12 16.0001V11.5001M16 9.25012C16 8.89191 15.5384 8.6657 14.6152 8.2133L12.5289 7.19092C12.2694 7.06372 12.1396 7.00012 12 7.00012C11.8604 7.00012 11.7306 7.06372 11.4711 7.19092L9.38478 8.2133C8.46159 8.6657 8 8.89191 8 9.25012M16 9.25012C16 9.60834 15.5384 9.83454 14.6152 10.2869L12.5289 11.3093C12.2694 11.4365 12.1396 11.5001 12 11.5001M8 9.25012C8 9.60834 8.46159 9.83454 9.38478 10.2869L11.4711 11.3093C11.7306 11.4365 11.8604 11.5001 12 11.5001" strokeLinejoin="round" />
+</svg>
   );
 }
 
 function DeliveryIcon({ className = "h-7 w-7" }) {
   return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      aria-hidden="true"
-      className={className}
-    >
-      <path d="M8 16.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15 16.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-      <path d="M3 4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1.05a2.5 2.5 0 0 1 4.9 0H10a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H3ZM14 7a1 1 0 0 0-1 1v6.05A2.5 2.5 0 0 1 9.5 16h4a2.5 2.5 0 0 1-3.5-2.5V8a1 1 0 0 0-1-1h-2.5a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1Z" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M19.5 19.5C19.5 20.8807 18.3807 22 17 22C15.6193 22 14.5 20.8807 14.5 19.5C14.5 18.1193 15.6193 17 17 17C18.3807 17 19.5 18.1193 19.5 19.5Z" />
+    <path d="M9.5 19.5C9.5 20.8807 8.38071 22 7 22C5.61929 22 4.5 20.8807 4.5 19.5C4.5 18.1193 5.61929 17 7 17C8.38071 17 9.5 18.1193 9.5 19.5Z" />
+    <path d="M14.5 19.5H9.5M19.5 19.5H20.2632C20.4831 19.5 20.5931 19.5 20.6855 19.4885C21.3669 19.4036 21.9036 18.8669 21.9885 18.1855C22 18.0931 22 17.9831 22 17.7632V15C22 11.4101 19.0899 8.5 15.5 8.5M11 6H12C13.4142 6 14.1213 6 14.5607 6.43934C15 6.87868 15 7.58579 15 9V17.5M2 12V17C2 17.9346 2 18.4019 2.20096 18.75C2.33261 18.978 2.52197 19.1674 2.75 19.299C3.09808 19.5 3.56538 19.5 4.5 19.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M7.85 7.85L6.5 6.95V4.7M2 6.5C2 8.98528 4.01472 11 6.5 11C8.98528 11 11 8.98528 11 6.5C11 4.01472 8.98528 2 6.5 2C4.01472 2 2 4.01472 2 6.5Z" strokeLinecap="round" strokeLinejoin="round" />
+</svg>
   );
 }
 
 function FundsIcon({ className = "h-7 w-7" }) {
   return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      aria-hidden="true"
-      className={className}
-    >
-      <path d="M4 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2V6h10a2 2 0 0 1-2-2V4a2 2 0 0 0-2-2H4Zm2 6a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H6Z" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M20.9427 16.8354C20.2864 12.8866 18.2432 9.94613 16.467 8.219C15.9501 7.71642 15.6917 7.46513 15.1208 7.23257C14.5499 7 14.0592 7 13.0778 7H10.9222C9.94081 7 9.4501 7 8.87922 7.23257C8.30834 7.46513 8.04991 7.71642 7.53304 8.219C5.75682 9.94613 3.71361 12.8866 3.05727 16.8354C2.56893 19.7734 5.27927 22 8.30832 22H15.6917C18.7207 22 21.4311 19.7734 20.9427 16.8354Z" strokeLinecap="round" />
+    <path d="M7.25662 4.44287C7.05031 4.14258 6.75128 3.73499 7.36899 3.64205C8.00392 3.54651 8.66321 3.98114 9.30855 3.97221C9.89237 3.96413 10.1898 3.70519 10.5089 3.33548C10.8449 2.94617 11.3652 2 12 2C12.6348 2 13.1551 2.94617 13.4911 3.33548C13.8102 3.70519 14.1076 3.96413 14.6914 3.97221C15.3368 3.98114 15.9961 3.54651 16.631 3.64205C17.2487 3.73499 16.9497 4.14258 16.7434 4.44287L15.8105 5.80064C15.4115 6.38146 15.212 6.67187 14.7944 6.83594C14.3769 7 13.8373 7 12.7582 7H11.2418C10.1627 7 9.6231 7 9.20556 6.83594C8.78802 6.67187 8.5885 6.38146 8.18945 5.80064L7.25662 4.44287Z" />
+</svg>
   );
 }
 
@@ -372,10 +352,91 @@ function StarIcon({ className = "h-4 w-4" }) {
   );
 }
 
+function ScaleIcon({ className = "h-4 w-4" }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      color="currentColor"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path d="M12 3v15M8 8L4 4M20 4l-4 4M5 21h14M8 18h8" />
+      <circle cx="8" cy="11" r="3" />
+      <circle cx="16" cy="11" r="3" />
+    </svg>
+  );
+}
+
+function GamepadIcon({ className = "h-4 w-4" }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+    <path d="M2.00825 15.8092C2.23114 12.3161 2.88737 9.7599 3.44345 8.27511C3.72419 7.5255 4.32818 6.96728 5.10145 6.78021C9.40147 5.73993 14.5986 5.73993 18.8986 6.78021C19.6719 6.96728 20.2759 7.5255 20.5566 8.27511C21.1127 9.7599 21.7689 12.3161 21.9918 15.8092C22.1251 17.8989 20.6148 19.0503 18.9429 19.8925C17.878 20.4289 17.0591 18.8457 16.5155 17.6203C16.2185 16.9508 15.5667 16.5356 14.8281 16.5356H9.17196C8.43331 16.5356 7.78158 16.9508 7.48456 17.6203C6.94089 18.8457 6.122 20.4289 5.05711 19.8925C3.40215 19.0588 1.87384 17.9157 2.00825 15.8092Z" stroke-linejoin="round" />
+    <path d="M5 4.5L6.96285 4M19 4.5L17 4" stroke-linejoin="round" />
+    <path d="M9 13L7.5 11.5M7.5 11.5L6 10M7.5 11.5L6 13M7.5 11.5L9 10" />
+    <path d="M15.9881 10H15.9971" stroke-linejoin="round" />
+    <path d="M17.9881 13H17.9971" stroke-linejoin="round" />
+</svg>
+  );
+}
+
+function ListIcon({ className = "h-4 w-4" }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      color="currentColor"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path d="M9 6H3M21 6H9M9 12H3M21 12H9M9 18H3M21 18H9" />
+    </svg>
+  );
+}
+
+function ReleaseIcon({ className = "h-4 w-4" }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      color="currentColor"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path d="M12 3v18M3 12h18" />
+      <circle cx="12" cy="12" r="8" />
+    </svg>
+  );
+}
+
 const trustStats = [
-  { value: "5,000+", label: "Stores Created" },
-  { value: "$100,000+", label: "Payments Processed" },
-  { value: "99.9%", label: "Uptime" },
+  { value: "5,000+", label: "Stores Created", icon: TrendIcon },
+  { value: "$100,000+", label: "Payments Processed", icon: PaymentIcon },
+  { value: "99.9%", label: "Uptime", icon: UptimeIcon },
+];
+
+const paymentSteps = [
+  { label: "List", icon: ListIcon },
+  { label: "Hold", icon: HoldIcon },
+  { label: "Release", icon: ReleaseIcon },
 ];
 
 const howItWorks = [
@@ -386,33 +447,6 @@ const howItWorks = [
   { label: "Protected Hold", icon: HoldIcon },
   { label: "Instant Delivery", icon: DeliveryIcon },
   { label: "Funds Released", icon: FundsIcon },
-];
-
-const features = [
-  {
-    title: "Instant Delivery",
-    text: "Deliver digital items the moment payment clears.",
-  },
-  {
-    title: "Dispute Resolution",
-    text: "Handle disagreements with a visible, structured process.",
-  },
-  {
-    title: "Sell API Keys",
-    text: "Support software products, tokens, and access keys.",
-  },
-  {
-    title: "Sell Game Accounts",
-    text: "Offer gaming goods with the same storefront flow.",
-  },
-  {
-    title: "Protected Payment Hold",
-    text: "Keep both sides protected while a transaction is active.",
-  },
-  {
-    title: "24/7 Support",
-    text: "Provide round-the-clock help for every buyer and seller.",
-  },
 ];
 
 const faqItems = [
@@ -495,42 +529,83 @@ const sidebarItems = [
   "Settings",
 ];
 
-function SectionTitle({ eyebrow, title, text }) {
+const features = [
+  {
+    title: "Instant Delivery",
+    text: "Deliver digital items the moment payment clears.",
+    icon: DeliveryIcon,
+  },
+  {
+    title: "Dispute Resolution",
+    text: "Handle disagreements with a visible, structured process.",
+    icon: ScaleIcon,
+  },
+  {
+    title: "Sell API Keys",
+    text: "Support software products, tokens, and access keys.",
+    icon: PackageIcon,
+  },
+  {
+    title: "Sell Game Accounts",
+    text: "Offer gaming goods with the same storefront flow.",
+    icon: GamepadIcon,
+  },
+  {
+    title: "Protected Payment Hold",
+    text: "Keep both sides protected while a transaction is active.",
+    icon: ShieldIcon,
+  },
+  {
+    title: "24/7 Support",
+    text: "Provide round-the-clock help for every buyer and seller.",
+    icon: MessageIcon,
+  },
+];
+
+function SectionTitle({ eyebrow, title, text, isDark }) {
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-cyan-200/60 bg-cyan-500/10 text-cyan-700 dark:border-cyan-300/20 dark:text-cyan-200">
+        <span className={`inline-flex h-8 w-8 items-center justify-center rounded-full border bg-cyan-500/10 ${!isDark ? "border-cyan-200/60 text-cyan-700" : "text-cyan-200 border-cyan-300/20"}`}>
           <StarIcon className="h-4 w-4" />
         </span>
-        <p className="text-sm uppercase tracking-[0.28em] text-cyan-700/75 dark:text-cyan-200/80">
+        <p className={`text-sm uppercase tracking-[0.28em] ${!isDark ? "text-cyan-700/75" : "text-cyan-200/80"}`}>
           {eyebrow}
         </p>
       </div>
-      <h2 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-white sm:text-3xl lg:text-[2.15rem]">
+      <h2 className={`text-2xl font-semibold tracking-tight ${!isDark ? "text-slate-900" : "text-white"} sm:text-3xl lg:text-[2.15rem]`}>
         {title}
       </h2>
-      <p className="max-w-3xl text-sm leading-6 text-slate-600 dark:text-slate-400 sm:text-base">
+      <p className={`max-w-3xl text-sm leading-6 ${!isDark ? "text-slate-600" : "text-slate-400"} sm:text-base`}>
         {text}
       </p>
     </div>
   );
 }
 
-function StatCard({ value, label }) {
+function StatCard({ value, label, icon: Icon, isDark }) {
   return (
-    <div className="rounded-3xl border border-slate-200/80 bg-white/90 px-5 py-5 text-center shadow-[0_10px_30px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-slate-950/70">
-      <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full border border-cyan-200/50 bg-cyan-500/10 text-cyan-700 dark:border-cyan-300/20 dark:text-cyan-200">
-        <TrendIcon className="h-4 w-4" />
+    <div className={`rounded-3xl border px-5 py-5 text-center shadow-[0_10px_30px_rgba(15,23,42,0.08)] backdrop-blur ${
+      isDark ? "border-white/10 bg-slate-950/70" : "border-slate-200/80 bg-white/90"
+    }`}>
+      <div className={`mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full border bg-cyan-500/10 ${
+        isDark ? "border-cyan-300/20 text-cyan-200" : "border-cyan-200/50 text-cyan-700"
+      }`}>
+        {Icon ? <Icon className="h-4 w-4" /> : <TrendIcon className="h-4 w-4" />}
       </div>
-      <p className="text-2xl font-semibold text-slate-900 dark:text-white sm:text-[28px]">
+      <p className={`text-2xl font-semibold sm:text-[28px] ${
+        isDark ? "text-white" : "text-slate-900"
+      }`}>
         {value}
       </p>
-      <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{label}</p>
+      <p className={`mt-1 text-sm ${
+        isDark ? "text-slate-400" : "text-slate-500"
+      }`}>{label}</p>
     </div>
   );
 }
 
-function StepBubble({ label, icon: Icon }) {
+function StepBubble({ label, icon: Icon, isDark }) {
   return (
     <div className="flex flex-col items-center gap-3 text-center relative group">
       {/* Glow */}
@@ -541,65 +616,74 @@ function StepBubble({ label, icon: Icon }) {
 
       {/* Icon container */}
       <div
-        className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full 
-        border border-cyan-200/40 
-        bg-white/90 
-        text-cyan-700 
+        className={`relative z-10 flex h-16 w-16 items-center justify-center rounded-full
         shadow-[0_10px_25px_rgba(34,211,238,0.25)]
-        dark:border-cyan-300/20 
-        dark:bg-slate-900/80 
-        dark:text-cyan-200
-        dark:shadow-[0_0_30px_rgba(168,85,247,0.25)]"
+        ${
+          isDark
+            ? "border-cyan-300/20 bg-slate-900/80 text-cyan-200 shadow-[0_0_30px_rgba(168,85,247,0.25)]"
+            : "border-cyan-200/40 bg-white/90 text-cyan-700"
+        }
+        border`}
       >
         <Icon className="h-7 w-7" />
       </div>
 
-      <p className="max-w-[100px] text-[11px] leading-4 text-slate-600 dark:text-slate-400">
+      <p className={`max-w-[100px] text-[11px] leading-4 ${
+        isDark ? "text-slate-400" : "text-slate-600"
+      }`}>
         {label}
       </p>
     </div>
   );
 }
 
-function FeatureCard({ title, text }) {
+function FeatureCard({ title, text, icon: Icon, isDark }) {
   return (
-    <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_14px_30px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-slate-950/70">
-      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl border border-cyan-200/30 bg-[linear-gradient(135deg,rgba(34,211,238,0.2),rgba(168,85,247,0.18))] text-cyan-700 dark:border-cyan-300/15 dark:text-cyan-200">
-        {title.includes("Payment") ? (
-          <ShieldIcon className="h-5 w-5" />
-        ) : title.includes("API") ? (
-          <PackageIcon className="h-5 w-5" />
-        ) : title.includes("Support") ? (
-          <MessageIcon className="h-5 w-5" />
-        ) : (
-          <LockIcon className="h-5 w-5" />
-        )}
+    <div className={`rounded-2xl border p-5 shadow-[0_14px_30px_rgba(15,23,42,0.08)] backdrop-blur ${
+      isDark ? "border-white/10 bg-slate-950/70" : "border-slate-200/80 bg-white/90"
+    }`}>
+      <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-2xl border bg-[linear-gradient(135deg,rgba(34,211,238,0.2),rgba(168,85,247,0.18))] ${
+        isDark ? "border-cyan-300/15 text-cyan-200" : "border-cyan-200/30 text-cyan-700"
+      }`}>
+        {Icon ? <Icon className="h-5 w-5" /> : <LockIcon className="h-5 w-5" />}
       </div>
-      <h3 className="text-sm font-semibold text-slate-900 dark:text-white">
+      <h3 className={`text-sm font-semibold ${
+        isDark ? "text-white" : "text-slate-900"
+      }`}>
         {title}
       </h3>
-      <p className="mt-2 text-xs leading-5 text-slate-600 dark:text-slate-400">
+      <p className={`mt-2 text-xs leading-5 ${
+        isDark ? "text-slate-400" : "text-slate-600"
+      }`}>
         {text}
       </p>
     </div>
   );
 }
 
-function ProductCard({ product }) {
+function ProductCard({ product, isDark }) {
   return (
-    <div className="flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/90 p-4 shadow-[0_12px_28px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-slate-950/70">
+    <div className={`flex items-center gap-3 rounded-2xl border p-4 shadow-[0_12px_28px_rgba(15,23,42,0.08)] backdrop-blur ${
+      isDark ? "border-white/10 bg-slate-950/70" : "border-slate-200/80 bg-white/90"
+    }`}>
       <div
         className={`h-12 w-12 rounded-2xl bg-gradient-to-br ${product.accent} shadow-[0_0_22px_rgba(168,85,247,0.18)]`}
       />
       <div className="min-w-0 flex-1">
-        <p className="font-medium text-slate-900 dark:text-white">
+        <p className={`font-medium ${
+          isDark ? "text-white" : "text-slate-900"
+        }`}>
           {product.name}
         </p>
-        <p className="text-xs text-slate-500 dark:text-slate-400">
+        <p className={`text-xs ${
+          isDark ? "text-slate-400" : "text-slate-500"
+        }`}>
           Digital product card
         </p>
       </div>
-      <p className="text-sm font-semibold text-slate-900 dark:text-cyan-100">
+      <p className={`text-sm font-semibold ${
+        isDark ? "text-cyan-100" : "text-slate-900"
+      }`}>
         {product.price}
       </p>
     </div>
@@ -655,7 +739,7 @@ function DashboardPreview({ isDark }) {
               {sidebarItems.map((item, index) => (
                 <div
                   key={item}
-                  className={`rounded-2xl px-3 py-2 text-xs ${index === 0 ? "bg-[linear-gradient(135deg,rgba(74,111,223,0.15),rgba(172,114,230,0.15))] font-medium text-slate-900 dark:text-white" : textSecondary}`}
+                  className={`rounded-2xl px-3 py-2 text-xs ${index === 0 ? isDark ? "bg-[linear-gradient(135deg,rgba(74,111,223),rgba(172,114,230,0.15))] font-medium text-white" : "bg-[linear-gradient(135deg,rgba(74,111,223),rgba(172,114,230,0.15))] font-medium text-slate-900" : textSecondary}`}
                 >
                   {item}
                 </div>
@@ -803,7 +887,7 @@ function DashboardPreview({ isDark }) {
                           {order.amount}
                         </p>
                         <p
-                          className={`text-xs ${order.status === "Paid" ? "text-emerald-600 dark:text-emerald-300" : "text-amber-600 dark:text-amber-300"}`}
+                          className={`text-xs ${order.status === "Paid" ? isDark ? "text-emerald-300" : "text-emerald-600" : isDark ? "text-amber-300" : "text-amber-600"}`}
                         >
                           {order.status}
                         </p>
@@ -846,8 +930,12 @@ function CreateStoreSection() {
   return (
     <section className="relative overflow-hidden px-4 py-6 sm:px-6 lg:px-8">
       <div className={`absolute inset-0 -z-10 ${pageBg}`} />
-      <div className="absolute left-0 top-24 -z-10 h-72 w-72 rounded-full bg-cyan-300/20 blur-3xl dark:bg-cyan-400/12" />
-      <div className="absolute right-0 top-24 -z-10 h-72 w-72 rounded-full bg-violet-300/20 blur-3xl dark:bg-violet-500/12" />
+      <div className={`absolute left-0 top-24 -z-10 h-72 w-72 rounded-full blur-3xl ${
+        isDark ? "bg-cyan-400/12" : "bg-cyan-300/20"
+      }`} />
+      <div className={`absolute right-0 top-24 -z-10 h-72 w-72 rounded-full blur-3xl ${
+        isDark ? "bg-violet-500/12" : "bg-violet-300/20"
+      }`} />
 
       <div className="flex flex-col gap-8 lg:gap-10">
         <div
@@ -889,7 +977,11 @@ function CreateStoreSection() {
                 </button>
                 <button
                   type="button"
-                  className="rounded-full border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-slate-100"
+                  className={`rounded-full border px-5 py-3 text-sm font-semibold transition hover:-translate-y-0.5 ${
+                    isDark
+                      ? "border-white/10 bg-white/5 text-slate-100 hover:bg-white/10"
+                      : "border-slate-300 bg-white/80 text-slate-700 hover:border-slate-400 hover:bg-white"
+                  }`}
                 >
                   <span className="inline-flex items-center gap-2">
                     <GridIcon className="h-4 w-4" />
@@ -915,7 +1007,7 @@ function CreateStoreSection() {
           </div>
           <div className="grid gap-3 md:grid-cols-3">
             {trustStats.map((stat) => (
-              <StatCard key={stat.label} {...stat} />
+              <StatCard key={stat.label} {...stat} isDark={isDark} />
             ))}
           </div>
         </div>
@@ -927,6 +1019,7 @@ function CreateStoreSection() {
             eyebrow="Your Link Section"
             title="dsell.store/yourname"
             text="Share your custom store link with a polished, shareable storefront URL and a clean mobile-friendly presentation."
+            isDark={isDark}
           />
 
           <div className="grid gap-4 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -937,7 +1030,9 @@ function CreateStoreSection() {
                 className={`rounded-[24px] border px-5 py-4 text-2xl font-medium tracking-tight sm:px-6 sm:py-5 sm:text-3xl ${isDark ? "border-white/10 bg-slate-950/80 text-slate-200" : "border-slate-200/70 bg-white/88 text-slate-400"}`}
               >
                 <span className="inline-flex items-center gap-3">
-                  <ShieldIcon className="h-5 w-5 text-cyan-600 dark:text-cyan-200" />
+                  <ShieldIcon className={`h-5 w-5 ${
+                    isDark ? "text-cyan-200" : "text-cyan-600"
+                  }`} />
                   dsell.store/yourname
                 </span>
               </div>
@@ -954,6 +1049,7 @@ function CreateStoreSection() {
             eyebrow="How It Works"
             title="A simple 7-step flow"
             text="Guide buyers through registration, store creation, product listing, and release without clutter or visual noise."
+            isDark={isDark}
           />
 
           <div
@@ -962,10 +1058,12 @@ function CreateStoreSection() {
             <div className="grid gap-5 md:grid-cols-7 md:items-center">
               {howItWorks.map((step, index) => (
                 <div key={step.label} className="flex items-center gap-2">
-                  <StepBubble label={step.label} icon={step.icon} />
+                  <StepBubble label={step.label} icon={step.icon} isDark={isDark} />
                   {index < howItWorks.length - 1 && (
                     <div className="hidden md:flex md:flex-1 md:items-center md:justify-center -mx-1">
-                      <FlowArrow className="h-5 w-5 text-cyan-400 dark:text-purple-400" />
+                      <FlowArrow className={`h-5 w-5 ${
+                        isDark ? "text-purple-400" : "text-cyan-400"
+                      }`} />
                     </div>
                   )}
                 </div>
@@ -983,6 +1081,7 @@ function CreateStoreSection() {
             eyebrow="Storefront Preview"
             title="A clean product shelf with analytics"
             text="The storefront preview stays centered, polished, and functional in both themes, with the same layout rhythm as the reference."
+            isDark={isDark}
           />
 
           <div
@@ -1041,7 +1140,7 @@ function CreateStoreSection() {
 
                 <div className="grid gap-3 sm:grid-cols-4 xl:grid-cols-4">
                   {productCards.map((product) => (
-                    <ProductCard key={product.name} product={product} />
+                    <ProductCard key={product.name} product={product} isDark={isDark} />
                   ))}
                 </div>
 
@@ -1082,11 +1181,12 @@ function CreateStoreSection() {
             eyebrow="Features & Use Cases"
             title="Flexible commerce blocks"
             text="These cards can represent instant delivery, dispute handling, API keys, game accounts, and support workflows while staying visually consistent."
+            isDark={isDark}
           />
 
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {features.map((feature) => (
-              <FeatureCard key={feature.title} {...feature} />
+              <FeatureCard key={feature.title} {...feature} isDark={isDark} />
             ))}
           </div>
         </div>
@@ -1098,31 +1198,40 @@ function CreateStoreSection() {
             <SectionTitle
               eyebrow="Security & FAQ"
               title="Payments explained clearly"
-              text="The left side can hold a visual lock diagram while the right side answers common payment questions in a compact, readable format."
+              isDark={isDark}              
             />
 
             <div
               className={`rounded-[28px] border p-4 ${isDark ? "border-white/10 bg-[linear-gradient(180deg,rgba(7,12,24,0.95),rgba(16,22,36,0.92))]" : "border-slate-200/80 bg-[linear-gradient(180deg,rgba(249,251,255,0.95),rgba(231,239,249,0.9))]"}`}
             >
-              <div className="grid grid-cols-3 gap-2 text-center text-xs text-slate-500 dark:text-slate-400">
-                {["List", "Hold", "Release"].map((item, index) => (
-                  <div
-                    key={item}
-                    className={`rounded-2xl border p-3 ${isDark ? "border-white/10 bg-slate-900/80" : "border-slate-200/70 bg-white/80"}`}
-                  >
-                    <div className="mx-auto mb-2 h-10 w-10 rounded-full border border-cyan-200/30 bg-[linear-gradient(135deg,rgba(34,211,238,0.18),rgba(168,85,247,0.18))]" />
-                    <p
-                      className={`font-medium ${isDark ? "text-slate-200" : "text-slate-700"}`}
+              <div className={`grid grid-cols-3 gap-2 text-center text-xs ${
+                isDark ? "text-slate-400" : "text-slate-500"
+              }`}>
+                {paymentSteps.map((step, index) => {
+                  const StepIcon = step.icon;
+                  return (
+                    <div
+                      key={step.label}
+                      className={`rounded-2xl border p-3 ${isDark ? "border-white/10 bg-slate-900/80" : "border-slate-200/70 bg-white/80"}`}
                     >
-                      {index + 1}. {item}
-                    </p>
-                  </div>
-                ))}
+                      <div className={`mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full border bg-[linear-gradient(135deg,rgba(34,211,238,0.18),rgba(168,85,247,0.18))] ${
+                        isDark ? "border-cyan-300/20 text-cyan-200" : "border-cyan-200/30 text-cyan-700"
+                      }`}>
+                        <StepIcon className="h-5 w-5" />
+                      </div>
+                      <p
+                        className={`font-medium ${isDark ? "text-slate-200" : "text-slate-700"}`}
+                      >
+                        {index + 1}. {step.label}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
 
-          <div className="space-y-3 mt-7">
+          <div className="space-y-3 mt-1">
             {faqItems.map((item) => (
               <details
                 key={item.question}
@@ -1176,3 +1285,4 @@ function CreateStoreSection() {
 }
 
 export default CreateStoreSection;
+

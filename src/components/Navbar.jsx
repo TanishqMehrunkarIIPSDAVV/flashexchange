@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useTheme } from "../ThemeProvider";
 
 function ShieldIcon({ className = "h-4 w-4" }) {
@@ -41,9 +42,45 @@ function ThemeGlyph({ isDark, className = "h-4 w-4" }) {
 
 function Navbar({ open, setOpen }) {
   const { isDark, toggleTheme } = useTheme();
+  const [isHidden, setIsHidden] = useState(false);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    const scrollThreshold = 24;
+
+    const updateNavbarVisibility = () => {
+      const currentScrollY = window.scrollY;
+      const scrollDelta = currentScrollY - lastScrollY;
+
+      if (Math.abs(scrollDelta) < scrollThreshold) {
+        ticking = false;
+        return;
+      }
+
+      setIsHidden(scrollDelta > 0 && currentScrollY > 64);
+      lastScrollY = currentScrollY;
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (ticking) {
+        return;
+      }
+
+      ticking = true;
+      window.requestAnimationFrame(updateNavbarVisibility);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="site-nav sticky top-0 z-50 w-full border-b px-4 py-4 backdrop-blur-xl sm:px-6">
+    <header className={`site-nav sticky top-0 z-50 w-full border-b px-4 py-4 backdrop-blur-xl sm:px-6 ${isHidden ? "site-nav-hidden" : ""}`}>
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-[999px] border border-white/10 px-4 py-3 shadow-[0_18px_50px_rgba(2,6,23,0.16)] sm:px-5">
         <div className="flex items-center gap-3 text-left">
           <div className="nav-logo-mark flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold text-white">
@@ -81,7 +118,7 @@ function Navbar({ open, setOpen }) {
 
           <button
             type="button"
-            className="hidden rounded-full border border-cyan-300/30 bg-[linear-gradient(135deg,rgba(34,211,238,0.18),rgba(99,102,241,0.85))] px-4 py-2 text-sm font-medium text-white shadow-[0_0_20px_rgba(34,211,238,0.18)] transition hover:-translate-y-0.5 md:inline-flex"
+            className="hidden rounded-full border border-cyan-300/30 bg-[linear-gradient(135deg,rgba(34,211,238),rgba(99,102,241,0.85))] px-4 py-2 text-sm font-medium text-white shadow-[0_0_20px_rgba(34,211,238,0.18)] transition hover:-translate-y-0.5 md:inline-flex"
           >
             <span className="inline-flex items-center gap-2">
               <LoginIcon className="h-4 w-4" />
