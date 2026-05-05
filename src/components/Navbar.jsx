@@ -80,8 +80,12 @@ function Navbar({ open, setOpen }) {
   }, []);
 
   return (
-    <header className={`site-nav sticky top-0 z-50 w-full border-b px-4 py-4 backdrop-blur-xl sm:px-6 ${isHidden ? "site-nav-hidden" : ""}`}>
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-[999px] border border-white/10 px-4 py-3 shadow-[0_18px_50px_rgba(2,6,23,0.16)] sm:px-5">
+    <header className={`site-nav sticky top-0 z-50 w-full bg-transparent px-4 py-4 sm:px-6 ${isHidden ? "site-nav-hidden" : ""}`}>
+      <div className={`mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-[999px] border px-4 py-3 shadow-[0_18px_50px_rgba(2,6,23,0.16)] sm:px-5 ${
+        isDark
+          ? "border-cyan-300/15 bg-[linear-gradient(135deg,rgba(3,8,20,0.96),rgba(10,16,34,0.92))]"
+          : "border-cyan-200/50 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(232,244,255,0.95))]"
+      }`}>
         <div className="flex items-center gap-3 text-left">
           <div className="nav-logo-mark flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold text-white">
             <ShieldIcon className="h-4 w-4" />

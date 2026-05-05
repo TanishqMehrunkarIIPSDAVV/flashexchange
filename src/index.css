@@ -51,9 +51,9 @@
 
 @layer components {
   .site-nav {
-    background: rgba(255, 255, 255, 0.92);
-    border-bottom-color: rgba(148, 163, 184, 0.12);
-    box-shadow: 0 12px 34px rgba(15, 23, 42, 0.05);
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
     transition: transform 0.28s ease, opacity 0.28s ease, box-shadow 0.28s ease;
     will-change: transform, opacity;
   }
@@ -65,9 +65,9 @@
   }
 
   html.dark .site-nav {
-    background: rgba(4, 10, 24, 0.78);
-    border-bottom-color: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 12px 40px rgba(2, 6, 23, 0.28);
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
   }
 
   .nav-logo-mark {
@@ -160,4 +160,8 @@
     border-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 14px 38px rgba(2, 6, 23, 0.24);
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
